@@ -1,0 +1,113 @@
+  /* Apply your site's styles */
+  body {
+    background-color: #000924; /* Dark background */
+    color: #ffffff; /* White text */
+    margin-top: 112px; /* Adjust for header */
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 200px !important;
+    }
+}
+
+
+
+.edit-profile-container {
+    max-width: 500px;
+    margin: 150px auto; /* Adjusted margin for better spacing */
+    padding: 20px;
+    background-color: #0d162f; /* Dark container background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-container h2 {
+    color: white; /* White text */
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* White text */
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #262e44; /* Dark input background */
+    color: #ffffff; /* White text */
+    resize: none; /* Disable textarea resizing */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: white; /* White border on focus */
+    outline: none;
+}
+
+.btn-save {
+    width: 40%; /* Full-width button */
+    background: linear-gradient(to right, #1e90ff, #6a5acd); /* Gradient button */
+    color: #ffffff; /* White text */
+    border: none;
+    margin-left: 135px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-save:hover {
+    background: linear-gradient(to left, #1e90ff, #6a5acd); /* Reverse gradient on hover */
+}
+
+.error {
+    color: red; /* Red error text */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #1e90ff; /* Blue link */
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .edit-profile-container {
+        margin: 20px ; /* Smaller margin for smaller screens */
+        padding: 15px;
+    }
+
+    .edit-profile-container h2 {
+        font-size: 24px; /* Smaller heading for smaller screens */
+    }
+
+    .form-group input, .form-group textarea {
+        padding: 8px; /* Smaller padding for inputs */
+    }
+
+    .btn-save {
+        padding: 8px 16px;
+        margin-left:  0;
+        width: 100%; /* Smaller padding for button */
+    }
+}

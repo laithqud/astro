@@ -1,0 +1,290 @@
+body{
+  background-color: #000924;
+  box-sizing: border-box;
+}
+
+.top-nav , .bottom-nav{
+  background-color: rgba(0, 9, 36, 1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+}
+
+.div-video{
+  position: absolute;
+  left: 100px;
+  width: fit-content;
+}
+.text-color{
+  color: white;
+}
+
+
+#video{
+  position: relative;
+  width: 100%;
+}
+
+#our-video{
+  width: 100%;
+}
+
+#unmute-button{
+  width: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1 !important;
+  position: absolute !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  transform: translate(-50%, -50%) !important;
+  border: none !important;
+  background: none !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50% !important;
+  z-index: 10000 !important;
+}
+
+
+
+
+
+h3{
+  border-bottom: 2px solid;
+  display: inline;
+  padding-bottom: 10px;
+}
+.padding50px{
+  padding: 50px;
+}
+.padding10px{
+  padding: 10px;
+  width: 200px;
+  color: white;
+  text-align: center;
+}
+
+.widthHeight100{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.div-MeetUs-group{
+  border-radius: 10px;
+  margin-top: 25px;
+  width: max-content;
+}
+.div-MeetUs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-color {
+  color: #fff; /* Dark gray for better readability */
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a; /* Darker for contrast */
+}
+
+/* Story Section Styles */
+.div-story {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.story-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #0d162f;
+
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.text-story {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #fff !important;
+  flex: 1;
+  margin: 0;
+}
+
+.story-alignment {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.story-alignment:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .story-card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .story-alignment {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+  }
+
+  h3 {
+      font-size: 2rem;
+  }
+
+  .text-story {
+      font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.our-mission-div{
+  width: 330px;
+  background-color: #0d162f;
+  border-radius: 10px;
+  padding: 25px;
+}
+#our-mission{
+  /* background-color: #8b8b8b; */
+  margin-bottom: 50px;
+}
+.cta-container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 50px;
+  width: fit-content;
+}
+
+.cta-container h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cta-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: repeating-linear-gradient(to right, #000150, #432553 );
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: repeating-linear-gradient(to right, #432553,  #000150);
+}
+
+@media (max-width: 1029px) {
+  .div-MeetUs-group{
+      width: auto;
+  } 
+}
+@media (max-width: 992px) {
+  .query992{
+      display: flex;
+      flex-direction: column;
+  } 
+}
+@media (max-width: 776px) {
+  #video{
+      width: 100%;
+
+  }
+  #unmute-button{ 
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+  }
+  
+  .widthHeight100{
+      width: 130px;
+      height: 130px;
+  }
+  .query776{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  } 
+  .our-mission-div{
+      padding: 15px;
+      width: 300px;
+  }
+}
+@media (max-width: 585px) {
+  #div3-divB{
+      flex-direction: column;
+      align-items: center;
+  }
+
+ .text-story{
+     font-size: 12px;
+ }
+ .query585{
+  width: min-content;
+ }
+ .padding50px{
+     padding: 10px;
+ }
+  
+}
+

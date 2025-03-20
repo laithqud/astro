@@ -1,0 +1,111 @@
+body {
+    margin-top: 112px !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 177px !important;
+    }
+    
+    .row {
+        gap: 15px !important; 
+    }
+}
+
+
+.header {
+    padding: 50px 0;
+    background-image: url('/public/images/12345.jpg');
+    background-size: cover;
+}
+
+.contact-section {
+    padding: 40px;
+    background-color: #0d162f; /* Updated background color */
+    border-radius: 10px;
+    color: #ffffff; /* Ensure text is white for contrast */
+}
+
+.faq-section {
+    padding: 40px;
+    background-color: #0d162f; /* Updated background color */
+    border-radius: 10px;
+    color: #ffffff; /* Ensure text is white for contrast */
+}
+
+.btn-custom {
+    background: linear-gradient(to right, #0c3460, #31276a);
+    color: white;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(to left, #0c3460, #31276a);
+}
+
+.form-control {
+    background-color: #262e44; /* Dark background for inputs */
+    color: #ffffff; /* White text for inputs */
+    border: 1px solid #2a2352; /* Add a subtle border for better visibility */
+}
+
+.form-control:focus {
+    background-color: #1a162d; /* Keep the same background on focus */
+    color: #ffffff; /* White text on focus */
+    border-color: #431172; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(67, 17, 114, 0.5); /* Add a glow effect on focus */
+}
+
+.form-select {
+    background-color: #262e44; /* Dark background for select */
+    color: #ffffff; /* White text for select */
+    border: 1px solid #2a2352; /* Add a subtle border for better visibility */
+}
+
+.form-select:focus {
+    background-color: #262e44; /* Keep the same background on focus */
+    color: #ffffff; /* White text on focus */
+    border-color: #431172; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(67, 17, 114, 0.5); /* Add a glow effect on focus */
+}
+
+.accordion-button {
+    background-color: #262e44; /* Dark background for accordion buttons */
+    color: #ffffff; /* White text for accordion buttons */
+    border: none !important; /* Remove border */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #262e44; /* Dark background for expanded accordion buttons */
+    color: #ffffff; /* White text for expanded accordion buttons */
+    border: none !important; /* Remove border */
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 5px rgba(67, 17, 114, 0.5); /* Add a glow effect on focus */
+}
+
+.accordion-body {
+    background-color: #1a162d; /* Dark background for accordion body */
+    color: #ffffff; /* White text for accordion body */
+}
+
+.accordion-item {
+    background-color: #262e44; /* Match the background of the FAQ section */
+    border: 1px solid #2a2352; /* Add a subtle border for better visibility */
+}
+
+.text-light {
+    text-align: center;
+    justify-content: space-between;
+    color: #ffffff; /* Ensure text is white for contrast */
+}
+
+.text-light1 {
+    text-decoration: none;
+    justify-content: space-between;
+    color: #ffffff; /* Ensure icons and text are white for contrast */
+}
+
+.text-content {
+    color: #ff6b6b !important; /* Example of a contrasting color for emphasis */
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: white; 
+  margin: 10px 0;
+  /* text-align: center; */
+}
+
+body{
+  font-family: "Electrolize", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1 {
+  font-size: 2.986rem;
+  font-family: "Iceland", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 2.488rem;
+}
+
+h3 {
+  font-size: 2.074rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: white;
+}
+
+.small {
+  font-size: 0.8rem;
+}

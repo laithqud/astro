@@ -1,0 +1,315 @@
+body {
+	margin: 0;
+	background-color: #000924; 
+	color: #ffffff; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+
+
+.login-container {
+	display: flex;
+	background-color: #0d162f; /* Updated background color */
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 100%;
+	max-width: 800px;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container {
+	flex: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #0d162f; /* Updated background color */
+}
+
+.form-container h1 {
+	font-size: 24px;
+	color: #ffffff; /* Ensure text is white for contrast */
+	margin-bottom: 20px;
+}
+
+.form-container p {
+	font-size: 14px;
+	color: #CCCCCC; /* Light gray for secondary text */
+	margin-bottom: 30px;
+}
+
+.social-container {
+	margin-bottom: 20px;
+}
+
+.social-container .social {
+	color: #ffffff; /* White for social icons */
+	margin: 0 10px;
+	font-size: 18px;
+	transition: color 0.3s;
+}
+
+.social-container .social:hover {
+	color: #6C63FF; /* Purple hover effect */
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.input-group input {
+	padding: 12px;
+	border: 1px solid #2a2352; /* Updated border color */
+	border-radius: 5px;
+	background-color: #262e44; /* Dark background for inputs */
+	color: #ffffff; /* White text for inputs */
+	font-size: 14px;
+	transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+	border-color: #6C63FF; /* Purple focus border */
+	outline: none;
+}
+
+input:-internal-autofill-selected {
+	background-color: #262e44 !important;
+}
+
+.login-button {
+	padding: 12px 24px ;
+	background: linear-gradient(to right, #1e90ff, #6a5acd); /* Updated gradient */
+	color: #ffffff; /* White text */
+	border: none;
+	border-radius: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.login-button:hover {
+	background: linear-gradient(to left, #1e90ff, #6a5acd); /* Reverse gradient on hover */
+}
+
+.login-footer {
+	margin-top: 20px;
+	font-size: 14px;
+	color: #CCCCCC; /* Light gray for footer text */
+	text-align: center;
+}
+
+.login-footer a {
+	color: #6C63FF; /* Purple for links */
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.login-footer a:hover {
+	color: #5a52e0; /* Darker purple on hover */
+}
+
+.overlay-container {
+	flex: 1;
+
+	background: linear-gradient(135deg, #0c3460, #31276a); /* Updated gradient */
+	background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.overlay-container h1 {
+	font-size: 40px;
+	color: #ffffff; /* White text */
+	margin-bottom: 20px;
+}
+
+.overlay-container p {
+	font-size: 14px;
+	color: #CCCCCC; /* Light gray for secondary text */
+	margin-bottom: 30px;
+}
+
+.overlay-container .ghost {
+	padding: 12px;
+	background: transparent;
+	border: 2px solid #ffffff; /* White border */
+	color: #ffffff; /* White text */
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.overlay-container .ghost:hover {
+	background: #ffffff; /* White background on hover */
+	color: #0c3460; /* Dark blue text on hover */
+}
+
+.header {
+	padding: 50px 0;
+	background-image: url('/public/images/12345.jpg');
+	background-size: cover;
+}
+
+.contact-section {
+	padding: 40px;
+	background-color: #1a162d; /* Updated background color */
+	border-radius: 10px;
+	color: #ffffff; /* White text */
+}
+
+.faq-section {
+	padding: 40px;
+	background-color: #1a162d; /* Updated background color */
+	border-radius: 10px;
+	color: #ffffff; /* White text */
+}
+
+.btn-custom {
+	background: linear-gradient(to right, #0c3460, #31276a); /* Updated gradient */
+	color: white;
+}
+
+.btn-custom:hover {
+	background: linear-gradient(to left, #0c3460, #31276a); /* Reverse gradient on hover */
+}
+
+.form-control {
+	background-color: #262e44; /* Dark background for inputs */
+	color: #ffffff; /* White text for inputs */
+	border: 1px solid #2a2352; /* Updated border color */
+}
+
+.form-control:focus {
+	background-color: #1a162d; /* Keep the same background on focus */
+	color: #ffffff; /* White text on focus */
+	border-color: #6C63FF; /* Purple border on focus */
+	box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Purple glow effect on focus */
+}
+
+.form-select {
+	background-color: #262e44; /* Dark background for select */
+	color: #ffffff; /* White text for select */
+	border: 1px solid #2a2352; /* Updated border color */
+}
+
+.form-select:focus {
+	background-color: #262e44; /* Keep the same background on focus */
+	color: #ffffff; /* White text on focus */
+	border-color: #6C63FF; /* Purple border on focus */
+	box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Purple glow effect on focus */
+}
+
+.accordion-button {
+	background-color: #262e44; /* Dark background for accordion buttons */
+	color: #ffffff; /* White text for accordion buttons */
+	border: none !important; /* Remove border */
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: #262e44; /* Dark background for expanded accordion buttons */
+	color: #ffffff; /* White text for expanded accordion buttons */
+	border: none !important; /* Remove border */
+}
+
+.accordion-button:focus {
+	box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Purple glow effect on focus */
+}
+
+.accordion-body {
+	background-color: #1a162d; /* Dark background for accordion body */
+	color: #ffffff; /* White text for accordion body */
+}
+
+.accordion-item {
+	background-color: #262e44; /* Match the background of the FAQ section */
+	border: 1px solid #2a2352; /* Updated border color */
+}
+
+.text-light {
+	text-align: center;
+	justify-content: space-between;
+	color: #ffffff; /* White text */
+}
+
+.text-light1 {
+	text-decoration: none;
+	justify-content: space-between;
+	color: #ffffff; /* White text */
+}
+
+.text-content {
+	color: #ff6b6b !important; /* Red for emphasis */
+}
+
+/* Animations */
+@keyframes fadeIn {
+	from {
+			opacity: 0;
+			transform: translateY(-20px);
+	}
+	to {
+			opacity: 1;
+			transform: translateY(0);
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.login-container {
+			flex-direction: column;
+	}
+
+	.form-container, .overlay-container {
+			padding: 20px;
+	}
+
+	.overlay-container {
+			order: -1; /* Move overlay to the top on mobile */
+	}
+}
+
+
+#signInForm , #signUpForm {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	margin-left: 15px;
+}
+
+.links{
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	color: #ffffff;
+	a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+h1 {
+	font-size: 45px !important;
+}

@@ -1,0 +1,121 @@
+/* Apply your site's styles */
+body {
+  background-color: #000924; /* Updated background color */
+  box-sizing: border-box;
+  color: #ffffff; /* White text */
+  margin-top: 112px !important;
+}
+
+@media (max-width: 768px) {
+  body {
+      margin-top: 177px !important;
+  }
+  
+  .row {
+      gap: 15px !important; 
+  }
+}
+
+.info_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 20px;
+}
+
+.info_img-current {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.div-adjustment {
+  background-color: #0d162f; /* Updated container color */
+  border-radius: 8px;
+  width: 100%;
+}
+
+.text-font {
+  color: white; /* Purple text */
+}
+
+.bg-button-a {
+  background: linear-gradient(to right, #1e90ff, #6a5acd); /* Updated button gradient */
+  width: fit-content;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: none; /* Remove border */
+  color: #ffffff; /* White text */
+  transition: background 0.3s;
+}
+
+.bg-button-a:hover {
+  background: linear-gradient(to left, #1e90ff, #6a5acd); /* Reverse gradient on hover */
+}
+
+.a-current {
+  display: block;
+  text-align: center;
+  height: 30px;
+  border-radius: 10px;
+  width: 100%;
+  background: linear-gradient(to right, #1e90ff, #6a5acd); /* Updated button gradient */
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  padding: 5px;
+  transition: background 0.3s;
+}
+
+.a-current:hover {
+  background: linear-gradient(to left, #1e90ff, #6a5acd); /* Reverse gradient on hover */
+}
+
+.status {
+  background-color: rgba(255, 255, 0, .6);
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 7px 20px;
+}
+
+#wishList-card {
+  width: 225px;
+  padding: 10px;
+  background-color: #0d162f; /* Updated container color */
+  border-radius: 8px;
+}
+
+.wishList-card-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.wishList-card-info {
+  width: 100%;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  #container-whole {
+      margin: 0 !important;
+      padding: 15px !important;
+  }
+
+  #info, #orders, #orders_history, #wishlist {
+      width: 100% !important;
+  }
+
+  #current-info {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.btn-danger, .btn-secondary{
+  border-radius: 50px;
+}

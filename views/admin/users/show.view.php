@@ -1,0 +1,1 @@
+<h1>Show specific resource</h1>

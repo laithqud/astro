@@ -1,0 +1,434 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+@import url('variables.css');
+@import url('global.css');
+@import url('navbar.css');
+@import url('footer.css');
+
+.ctg-container{
+  margin-bottom: 90px;
+}
+
+.category-solo{
+
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    /* background-color: rgb(13, 22, 47); /
+    / outline: 5px solid rgb(13, 22, 47); */
+    margin-top: 60px;
+
+
+}
+.category{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.category p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+
+}
+
+.category-solo svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.shop-bg{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.container h1 {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+
+}
+
+
+/* --------------------- card ------------------   */
+
+.card {
+    --light: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: space-between;
+    min-height: 350px !important;
+    padding: 1rem;
+    width: 14rem;
+    min-height: 335px;
+    background-color: rgb(13, 22, 47);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image_container {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    aspect-ratio: 1/.8;
+    background-color: var(--primary-800);
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .image_container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    fill: var(--light);
+  }
+  
+  .love-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 123456789;
+}
+
+  .love-icon i:hover {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .title {
+    overflow: hidden;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light);
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .description {
+    font-size: 0.75rem;
+    color: var(--light);
+  }
+  
+  .list-size {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  
+    margin-top: 0.25rem;
+  }
+  
+  .list-size .item-list {
+    list-style: none;
+  }
+  
+  .list-size .item-list-button {
+    cursor: pointer;
+  
+    padding: 0.5rem;
+    background-color: var(--zinc-800);
+  
+    font-size: 0.75rem;
+    color: var(--light);
+  
+    border: 2px solid var(--zinc-800);
+    border-radius: 0.25rem;
+  
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .item-list-button:hover {
+    border: 2px solid var(--light);
+  }
+  .item-list-button:focus {
+    background-color: var(--primary);
+  
+    border: 2px solid var(--primary-shadow);
+  
+    box-shadow: inset 0px 1px 4px var(--primary-shadow);
+  }
+  
+  .action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--light);
+    white-space: nowrap;
+  }
+  
+  .cart-button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem .8rem;
+    width: fit-content;
+    /* background-image: var(--bg-linear); */
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    background-color: rgb(38, 46, 68);
+    border: 1px solid rgb(38, 46, 68);
+    border-radius: 1.5rem;
+    /* box-shadow: inset 0 0 0.25rem 1px var(--light); */
+  }
+  
+  .cart-button:hover {
+    background-color: rgb(13, 22, 47);
+    border: 1px solid rgb(38, 46, 68);
+  }
+  
+  .cart-button .cart-icon {
+    width: 1rem;
+  }
+  
+  
+  
+  .filter-section {
+    background: rgb(13, 22, 47);;
+    padding: 20px;
+    color : white;
+    border-radius: 8px;
+  }
+  
+  
+  /* Search Bar */
+#searchInput {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff !important;
+  transition: background-color var(--transition-speed) ease;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+#searchInput:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#searchInput::placeholder {
+  color: grey !important;
+}
+
+#searchInput:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Style the range input track (background) */
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: rgb(255, 255, 255); /* Track background color */
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+/* Style the range input thumb (pointer) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: rgb(163, 163, 183); /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: rgb(163, 163, 183); /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  background: rgb(163, 163, 183); /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Hover effects */
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: rgb(214, 202, 254); /* Thumb hover color */
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: rgb(214, 202, 254); /* Thumb hover color */
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background: rgb(214, 202, 254); /* Thumb hover color */
+}
+
+/* Style the range input track for Firefox */
+input[type="range"]::-moz-range-track {
+  background: rgb(255, 255, 255); /* Track background color */
+  border-radius: 5px;
+}
+
+/* Style the range input track for Microsoft Edge */
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: rgb(255, 255, 255); /* Lower part of the track */
+  border-radius: 5px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: rgb(255, 255, 255); /* Upper part of the track */
+  border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .cards {
+    margin-top: 30px;
+  }
+}
+
+
+/* Pagination container */
+.pagination {
+  margin: 20px 0;
+}
+
+/* Pagination items (li elements) */
+.pagination .page-item {
+
+  display: inline-block;
+}
+
+/* Pagination links (a elements) */
+.pagination .page-link {
+  color: white; /* Default link color */
+  background-color: #0d162f; /* Default background color */
+  border: none !important; /* Default border color */
+  padding: 8px 12px;
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover state for pagination links */
+.pagination .page-link:hover {
+  color: #0d162f; /* Hover text color */
+  background-color: #e9ecef; /* Hover background color */
+  border-color: #dee2e6; /* Hover border color */
+}
+
+/* Active page item */
+.pagination .page-item.active .page-link {
+  color: #0d162f; /* Active text color */
+  background-color: #e9ecef; /* Active background color */
+  border-color: #0d162f; /* Active border color */
+}
+
+/* Disabled page item */
+.pagination .page-item.disabled .page-link {
+  color: #6c757d; /* Disabled text color */
+  background-color: #fff; /* Disabled background color */
+  border-color: #dee2e6; /* Disabled border color */
+  pointer-events: none; /* Disable click events */
+}
+
+/* Ellipsis (disabled item for "..." separator) */
+.pagination .page-item.disabled .page-link {
+  color: #6c757d; /* Ellipsis text color */
+  background-color: transparent; /* Transparent background */
+  border-color: transparent; /* No border */
+}
+
+.apply{
+  background: linear-gradient(to right, #1e90ff, #6a5acd) ! important;
+  color: #fff ! important;
+  border-radius: 50px ! important;
+}
+
+.apply:hover{
+  background: linear-gradient(to left, #1e90ff, #6a5acd) ! important;
+  color: #fff ! important;
+  border-radius: 50px ! important;
+}
+
+
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.modal-content {
+  width: 100%; /* Ensure the modal content takes full width */
+}

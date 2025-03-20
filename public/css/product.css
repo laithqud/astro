@@ -1,0 +1,85 @@
+body {
+    background-color: #0d0b14;
+    margin-top: 112px !important;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 177px !important;
+    }
+    
+    .row {
+        gap: 15px !important; 
+    }
+}
+
+
+.product-image-container {
+    background-color: #141024;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    aspect-ratio: 1/0.957;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+
+
+.card {
+    background-color: #141024;
+    border-radius: 10px;
+    padding: 20px;
+}
+.btn-primary {
+    background: linear-gradient(to right, #1e90ff, #6a5acd) !important;
+    border: none;
+    border-radius: 50px;
+
+}
+.btn-primary:hover {
+    background-color: #5c1bb2;
+}
+.details-box {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.card1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.text-warning{
+    color:  #937cdf !important;
+}      
+.info-section {
+    display: flex;
+    gap: 10px;
+}
+.info-box {
+    background-color: #1f2937;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.card1 path {
+    color: #7d2ae8;
+ }

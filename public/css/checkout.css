@@ -1,0 +1,100 @@
+body {
+  background-color: black !important;
+  color: white !important;
+  margin-top: 110px !important;
+}
+
+.top-nav , .bottom-nav{
+  background-color: rgba(0, 9, 36, 1) !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  backdrop-filter: blur(0px) !important;
+}
+
+@media (max-width: 768px) {
+  body {
+      margin-top: 177px !important;
+  }
+  
+  .row {
+      gap: 15px !important; 
+  }
+}
+
+
+.contact-section, .faq-section {
+  padding: 40px;
+  background-color: #0d162f; 
+  border-radius: 10px;
+  color: #ffffff; 
+}
+
+.card {
+  background-color: #0d162f;
+  border: none;
+}
+
+.form-control, .form-select {
+  background-color: #262e44; 
+  color: #ffffff !important;
+  border: 1px solid #2a2352;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #1a162d;
+  color: #ffffff;
+  border-color: #431172;
+  box-shadow: 0 0 5px rgba(67, 17, 114, 0.5);
+}
+
+/* .checkout .btn, .btn-custom {
+  background: linear-gradient(to right, #0c3460, #31276a);
+  color: white;
+  border: none;
+}
+
+.checkout .btn:hover, .btn-custom:hover {
+  background: linear-gradient(to left, #0c3460, #31276a);
+  color: white;
+} */
+
+.accordion-button {
+  background-color: #262e44; 
+  color: #ffffff; 
+  border: none !important;
+}
+
+.accordion-button:not(.collapsed), .accordion-body, .accordion-item {
+  background-color: #1a162d;
+  color: #ffffff; 
+  border: 1px solid #2a2352;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 5px rgba(67, 17, 114, 0.5);
+}
+
+.text-light, .text-light1 {
+  color: #ffffff; 
+}
+
+.text-content {
+  color: #ff6b6b !important; 
+}
+
+
+::placeholder { 
+  color: #848484 !important;
+  opacity: 1; 
+}
+
+
+@media (max-width: 768px) {
+  .reverse {
+      flex-direction: column-reverse !important; 
+  }
+}
+
+label {
+  color: #ffffff !important;
+}

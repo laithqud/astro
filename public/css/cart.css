@@ -1,0 +1,99 @@
+body {
+    background-color: #000924;
+    color: white;
+    margin-top: 112px !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 177px !important;
+    }
+    
+    .row {
+        gap: 15px !important; 
+    }
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cart-item {
+    background-color: #0d162f;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.product-image-container {
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-container img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+
+.total-box {
+    background-color: #0d162f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.checkout-btn {
+    background-color: #431172;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.text-muted {
+    color: white !important;
+}
+.input-design {
+    width: 6% !important;
+    background: #0d162f !important;
+   
+    color: white;
+    border: none;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.quantity {
+    margin-top: 20px;
+}
+
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.modal-content {
+    width: 100%; /* Ensure the modal content takes full width */
+}
+
+.cart-checkout {
+    margin: 20px auto;
+    width: 100%;
+    
+}
